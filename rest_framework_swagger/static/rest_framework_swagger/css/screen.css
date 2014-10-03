@@ -325,6 +325,7 @@ table {
 }
 .swagger-ui-wrap table.fullwidth {
   width: 100%;
+  table-layout: fixed;
 }
 .swagger-ui-wrap .model-signature {
   font-family: "Droid Sans", sans-serif;
