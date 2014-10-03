@@ -109,6 +109,7 @@ class DocumentationGenerator(object):
 
             data[name] = {
                 'type': field.type_label,
+                'description': getattr(field, 'help_text', None),
                 'required': getattr(field, 'required', None),
                 'allowableValues': {
                     'min': getattr(field, 'min_length', None),
