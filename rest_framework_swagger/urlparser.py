@@ -29,7 +29,7 @@ class UrlParser(object):
             exclude_namespaces=exclude_namespaces,
         )
         if filter_path is not None:
-            return self.get_filtered_apis(apis, filter_path)
+            return self.get_filtered_apis(apis, filter_path + '/')
 
         return apis
 
